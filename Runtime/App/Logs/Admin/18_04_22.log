@@ -1,0 +1,345 @@
+[ 2018-04-22T11:52:11+08:00 ] 192.168.33.1 /index.php?m=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.032146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016367s ]
+
+[ 2018-04-22T11:52:12+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.030742s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007702s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0013s ]
+SQL: SELECT `value` FROM `cgw_config` WHERE `name` = 'VERIFY_OPEN' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.007527s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.007663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Undefined variable: breadcrumb /var/www/blog/Runtime/App/Cache/Admin/7c89c4e03b5756e9b4543663c7c8599d.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006539s ]
+
+[ 2018-04-22T11:52:13+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Public&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.040009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.044896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008399s ]
+
+[ 2018-04-22T11:52:17+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.033518s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006089s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `cgw_config` WHERE `name` = 'VERIFY_OPEN' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.008390s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.008405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined variable: breadcrumb /var/www/blog/Runtime/App/Cache/Admin/7c89c4e03b5756e9b4543663c7c8599d.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008876s ]
+
+[ 2018-04-22T11:52:18+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Public&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.041401s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016504s ]
+
+[ 2018-04-22T11:52:31+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Public&a=Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.029806s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004374s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `cgw_config` WHERE `name` = 'VERIFY_OPEN' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: lite /var/www/blog/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `cgw_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_ucenter_member` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-04-22T11:52:32+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Public&a=verify&random=0.8412673903698236
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.036221s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007355s ]
+
+[ 2018-04-22T11:54:45+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Public&a=Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.030348s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004776s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0012s ]
+SQL: SELECT `value` FROM `cgw_config` WHERE `name` = 'VERIFY_OPEN' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-04-22T11:54:45+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Public&a=verify&random=0.8412673903698236&random=0.917833236628134
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.037416s ]
+INFO: [ app_init ] --END-- [ RunTime:0.043827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007535s ]
+
+[ 2018-04-22T11:54:53+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Public&a=Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.031539s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006832s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0016s ]
+SQL: SELECT `value` FROM `cgw_config` WHERE `name` = 'VERIFY_OPEN' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: lite /var/www/blog/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `cgw_ucenter_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_ucenter_member` WHERE `username` = 'cgw' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`signature`,`tox_money`,`pos_province`,`pos_city`,`pos_district`,`pos_community` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `cgw_member` SET `login`=`login`+1,`last_login_time`='1524369292',`last_login_ip`='3232243969' WHERE `uid` = 1 [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cgw_syslogs` [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `cgw_node` [ RunTime:0.0109s ]
+SQL: SELECT `title` FROM `cgw_node` WHERE `name` = 'Login' AND `level` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `cgw_syslogs` (`modulename`,`actionname`,`opname`,`message`,`username`,`userid`,`userip`,`create_time`) VALUES ('公共模块','Login','用户登录','成功','admin','1','192.168.33.1','1524369293') [ RunTime:0.0016s ]
+
+[ 2018-04-22T11:54:53+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.029969s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006772s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cgw_group` [ RunTime:0.0268s ]
+SQL: SELECT * FROM `cgw_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cgw_node` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cgw_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `cgw_addons` [ RunTime:0.0145s ]
+SQL: SELECT `title`,`name` FROM `cgw_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cgw_ucenter_member` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0009s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cgw_avatar` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0008s ]
+SQL: SELECT SUM(view) AS tp_sum FROM `cgw_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_member` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cgw_syslogs` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_syslogs` ORDER BY id desc LIMIT 10   [ RunTime:0.0019s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.006449s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.006516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 58 行.
+NOTIC: [8] Undefined index: id /var/www/blog/Runtime/App/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php 第 342 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006916s ]
+
+[ 2018-04-22T11:55:23+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Public&a=password
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.028906s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005569s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent /var/www/blog/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.005436s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.005496s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005314s ]
+NOTIC: [2] Cannot modify header information - headers already sent /var/www/blog/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent /var/www/blog/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent /var/www/blog/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005654s ]
+
+[ 2018-04-22T11:55:33+08:00 ] 192.168.33.1 /index.php?m=Admin&c=Article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.039648s ]
+INFO: [ app_init ] --END-- [ RunTime:0.045719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007475s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::_initialize() should be compatible with Admin\Controller\CommonController::_initialize($dwz_db_name = '') /var/www/blog/App/Admin/Controller/ArticleController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: nb /var/www/blog/App/Common/Api/CategoryApi.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 0 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 1 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 11 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 13 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 12 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 8 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 10 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 9 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 7 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 6 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 5 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 4 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 3 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 2 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cgw_group` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_group` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_node` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`group_id`,`title`,`remark`,`icon` FROM `cgw_node` WHERE `level` = 2 AND `status` = 1 AND `pid` = 1 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cgw_addons` [ RunTime:0.0011s ]
+SQL: SELECT `title`,`name` FROM `cgw_addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cgw_node` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_node` WHERE `remark` = 'index' AND `name` = 'Article' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_node` WHERE `level` = 2 AND `name` = 'Article' AND `remark` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cgw_group` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title` FROM `cgw_group`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cgw_ucenter_member` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0018s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cgw_avatar` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_article` ORDER BY id desc  [ RunTime:0.0055s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.010721s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.010986s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined index: hassub /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 58 行.
+NOTIC: [8] Undefined variable: order /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 220 行.
+NOTIC: [8] Undefined variable: order /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 221 行.
+NOTIC: [8] Undefined variable: order /var/www/blog/Runtime/App/Cache/Admin/ac492b5605bffa8cac27c5e0dc599b32.php 第 222 行.
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: lite /var/www/blog/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SELECT * FROM `cgw_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.314797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.314867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010050s ]
+

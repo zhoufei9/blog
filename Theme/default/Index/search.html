@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="搜索,站内搜索,搜索：{$keyword}" />
+<meta name="description" content="再次起飞Z°博客搜索“{$keyword}”结果展示页面" />
+<meta name="robots" content="all" />
+
+
+<title>搜索：{$keyword}</title>
+
+<link href="__STATIC__/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+
+
+</head>
+<body>
+<include file="./default/Base/header"/>
+<!-- /header -->
+
+<div id="container">
+	
+<div id="main">
+	
+	<div id="place">
+		<strong>当前位置：</strong> <a href="/index.php?m=Blog&c=Index">再次起飞Z°</a> &gt; 搜索<strong>“{$keyword}”</strong><small> <span class="glyphicon glyphicon-list-alt"></span> <span>{$keyword|getartcount='search'}</span>个相关结果 <span class="glyphicon glyphicon-signal"></span> {$keyword|getartview='search'}次浏览</small>
+	</div>
+	<br/>
+
+<article:list name="vo" cate="0" status="1" row="10" title="$keyword" >	
+	<div id="listArticle">
+		
+		<div class="listtitle">
+		  	<h3><a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}">{$vo.titleicon}{$vo.title}</a><</h3>
+		</div>
+		
+		<span class="info">
+		  <small>日期：{$vo.create_time|friendlyDate}</small>&nbsp;|&nbsp;
+		  <small>分类：<a href="/index.php?m=Blog&c=Index&a=artlist&cid={$vo.cid}" target="_blank">{$vo.cid|get_cate_nameByid}</a></small>&nbsp;|&nbsp;
+			<small>{$vo.view} 人围观</small>
+		</span>	
+		
+		<p class="intro">
+			{$vo.description|op_t|cutstr_html=100}
+		</p>	
+		
+		<p class="readMore">
+			<a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}" title="{$vo.title}">阅读剩余部分...</a>
+		</p>	
+							
+	</div>
+</article:list>
+
+    <div class="pages">
+<article:page cate="0" status="1" row="10" title="$keyword" />
+		</div><!-- /pages -->
+	
+
+</div>
+
+<div id="sidebar">
+	<div id="ad_1">
+  	<a href="#"><img src="__STATIC__/images/ad-1.jpg" alt="请爱护地球的每一花一叶！" title="请爱护地球的每一花一叶！"/></a>
+  </div>
+  
+  <div id="sideLine"></div>
+  
+<include file="./default/Base/search"/>
+  
+  <div id="sideLine"></div>
+  
+    <div id="sidebarBox">
+  	<div class="boxTop">
+  		<h2><strong>热门搜索关键字</strong></h2>
+  	</div>
+  	 <div class="boxContent">
+  	 	<div class="tag">
+  	 		<ul>
+<include file="./default/Base/tags"/>
+		    </ul>
+  	 	</div>
+  	</div>
+  </div>
+
+
+</div>
+
+</div>
+
+<include file="./default/Base/footer"/>
+<!-- /footer -->
+
+</body>
+</html>

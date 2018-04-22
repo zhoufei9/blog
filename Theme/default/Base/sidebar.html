@@ -1,0 +1,114 @@
+
+<div id="sidebar">
+	<div id="ad_1">
+  	<a href="#"><img src="__STATIC__/images/ad-1.jpg" alt="请爱护地球的每一花一叶！！" title="请爱护地球的每一花一叶！"/></a>
+  </div>
+  
+  <div id="sideLine"></div>
+  
+<include file="./default/Base/search"/>
+  <div id="sideLine"></div>
+
+  <div id="sidebarBox">
+  	<div class="boxTop">
+  		<h2>日志分类</h2>
+  	</div>
+  	<div class="boxContent">
+	
+  		<ul class="listTitle ico1">
+  			<volist name="catelistarr" id="vo">
+		      <li><a href="/index.php?m=Blog&c=Index&a=artlist&cid={$vo.id}" target="_blank">{$vo.name}</a></li>
+		    </volist>
+      </ul>
+	  
+  	</div>
+  </div>
+  
+  <div id="sideLine"></div>
+  
+  <div id="sidebarBox">
+  	<div class="boxTop">
+  		<h2>热门日志</h2>
+  	</div>
+  	<div class="boxContent">
+  		<ul class="listTitle">
+      <!--最新文档-->
+       <article:list name="vo" cate="0" status="1" row="5" order="view desc" limit="true">
+      <li>
+<a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}" title="{$vo.title}">
+{$vo.title|cutstr_html=20}</a></li>
+      </article:list>
+      <!--//最新文档-->
+      </ul>
+  	</div>
+  </div>
+  
+  <div id="sideLine"></div>
+
+  <div id="sidebarBox">
+  	<div class="boxTop">
+  		<h2>最新日志</h2>
+  	</div>
+  	<div class="boxContent">
+  		<ul class="listTitle">
+      <!--最新文档-->
+      <article:list name="vo" cate="0" status="1" row="5" order="view desc" limit="true">
+      <li>
+<a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}" title="{$vo.title}">
+{$vo.title|cutstr_html=20}</a></li>
+      </article:list>
+      <!--//最新文档-->
+      </ul>
+  	</div>
+  </div>
+  
+  <div id="sideLine"></div>  
+  
+  <div id="sidebarBox">
+  	<div class="boxTop">
+  		<h2>网友评论</h2>
+  	</div>
+  	<div class="boxContent">
+  		<ul class="comments">
+        <article:list name="vo" cate="0" status="1" row="7" order="reply_count desc" limit="true">
+        <if condition="$vo['id']!=1">
+		</else><li> 
+<a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}" title="{$vo.title}">
+{$vo.title|cutstr_html=20}</a><span class="badge" title="{$vo.reply_count}条评论">（{$vo.reply_count}）</span> 
+        </li>
+		</if>
+        </article:list>
+      </ul>
+  	</div>
+  </div>
+  
+  <div id="sideLine"></div>
+  
+  <div id="sidebarBox">
+  	<div class="boxTop">
+  		<h2>标签云</h2>
+  	</div>
+  	 <div class="boxContent">
+  	 	<div class="tag">
+  	 		<ul>
+<include file="./default/Base/tags"/>
+
+		    </ul>
+  	 	</div>
+  	</div>
+  </div>
+  
+  <div id="sideLine"></div>
+  
+  <div id="sidebarBox">
+  	<div class="boxTop">
+  		<h2>友情链接</h2>
+  	</div>
+  	<div class="boxContent">
+  		<ul class="linksTxt">
+			 {:hook('friendLink')}
+		  </ul>
+  	</div>
+  </div>
+
+</div>

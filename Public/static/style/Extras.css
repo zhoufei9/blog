@@ -1,0 +1,220 @@
+/*
+
+[目录表] 
+
+	1- commentBox      文章评论表单
+	2- commentLayout   文章评论内容框架
+	3- commetpages     文章评论分页
+	
+*/
+
+
+/* =1 commentBox––––––––––––––––––––––––––––––––-––––––*/
+#commentBox{/* 表单框架 */
+	border-bottom:1px dashed #333;
+	float:left;
+	margin-bottom:20px;
+	padding-bottom:50px;
+	width:620px;
+}
+.commentMsg{/* 输入框架 */
+	float:left;
+	margin-top:10px;
+	width:350px;
+}
+
+.commentArea{/* 输入文本框 */
+	float:left;
+	height:100px;
+	width:350px;
+}
+.commentArea textarea{
+	float:left;
+	height:100px;
+	width:350px;
+        overflow:hidden;
+}
+.commentPost{/* 用户相关信息 */
+	float:left;
+	height:50px;
+	margin-top:5px;
+	width:350px;
+}
+.commentUserinfo{/* 昵称 */
+	float:left;
+	line-height:25px;
+	margin-top:5px;
+	width:350px;
+}
+.commentUserinfo input{
+	height:16px;
+	margin-top:8px;
+	width:150px;
+}
+.commentUserinfo img{/* 用户头像 */
+	height:20px
+	margin-top:8px;
+	margin-left:10px
+	width:50px;;
+}
+
+.commentSubmit{/* 提交按钮 */
+	float:left;
+	height:33px;
+	margin:9px 0px;
+	width:350px;
+}
+.commentSubmit input,.commentSubmit button{
+	vertical-align:middle;
+}
+.commentSubmit button{
+	border:none;
+	background:url(../images/commentBtn.jpg) no-repeat;
+	cursor:pointer;
+	height:33px;
+	width:190px;
+	overflow:hidden;
+}
+.commentSubmit img{
+	cursor:pointer;
+	height:33px;
+	overflow:hidden;
+	width:190px;
+}
+
+.commentMood{/* 表情 */
+	float:left;
+	height:210px;
+	margin-left:20px;
+	_margin-left:10px;
+	width:250px;
+}
+.commentMood ul{
+	float:left;
+}
+.commentMood ul li{
+	float:left;
+	height:40px;
+	margin-top:10px;
+	margin-bottom:7px;
+	padding-left:14px;
+}
+.commentMood ul li input,.commentMood ul li img{
+	margin-right:4px;
+	vertical-align:middle;
+}               
+
+/* =2 commentLayout––––––––––––––––––––––––––––––––––––––*/
+#commentLayout{/* 评论内容框架 */
+	float:left;
+	padding-bottom:50px;
+	width:620px;
+}
+.decmt-box{/* 内容区域 */
+	background:#FAFAFA;
+	border:1px solid #CCC;
+	float:left;
+	margin:5px auto;
+	padding:10px;
+	width:96%;
+}
+.decmt-box ul{
+}
+.decmt-box ul li{
+	padding-bottom:10px;
+	overflow:hidden;
+	width:100%;
+}
+.decmt-box ul li a.plpic{/* 头像 */
+	border:1px solid #DFD9B9;
+	float:left;
+	margin-right:5px;
+	height:50px;
+	padding:2px;
+	overflow:hidden;
+	width:50px;
+}
+.decmt-box span.title{/* 评论标题 */
+	color:#999;
+	float:left;
+	font-size:13px;
+	font-family:Georgia;
+	line-height:28px;
+	padding-left:10px;
+	width:200px;
+}
+.decmt-box span.title a{
+	color:#3354AA;
+	font-size:13px;
+	font-family:Verdana;
+	line-height:28px;
+  text-decoration:none;
+}
+.decmt-box span.title a:hover{
+	color:#662625;
+	font-size:13px;
+	font-family:Verdana;
+	line-height:26px;
+}
+.comment_act{/* 评论支持还是反对 */
+	color:#999;
+	font-size:11px;
+	float:right;
+	line-height:28px;
+}
+.comment_act a{
+	color:#3354AA;
+	text-decoration:none;
+}
+.comment_act a:hover{
+	color:#662625;
+}
+.decmt-box span.fr{
+	float:right;
+}
+.decmt-box ul li p{/* 评论内容 */
+	float:left;
+	padding:30px 5px 10px 5px;
+	width:96%;
+}
+.decmt-box span.quote{/* 评论引用 */
+	color:#999;
+	float:right;
+	font-size:11px;
+	font-family:Georgia;
+}
+.decmt-box span.quote a{
+	color:#3354AA;
+	font-size:11px;
+	font-family:Georgia;
+	text-decoration:none;
+}
+.decmt-box span.quote a:hover{
+	color:#3354AA;
+	font-size:11px;
+	font-family:Georgia;
+	text-decoration:none;
+}
+
+/* =3 commetpages––––––––––––––––––––––––––––––––––––––*/
+#commetpages{
+	color:#222;
+	font-size:11px;
+	line-height:40px;
+	text-align:center;
+}
+
+#commetpages a {
+	color:#222;
+	font-size:11px;
+	padding:3px;
+	text-decoration:none;
+}
+#commetpages a:hover{
+	background-color:#444;
+	color:#fff;
+	font-size:11px;
+	text-decoration:none;
+}
+
+

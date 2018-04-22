@@ -1,0 +1,100 @@
+<div class="list-group" id="respond">
+    <h4 class="list-group-item">发表评论</h4>
+            <div id="commentform" class="form-horizontal list-group-item">
+                <div class="markeditor ">
+                    <textarea class="form-control autosize" rows="3"  id="commentcontent"></textarea>
+                </div>
+                <div id="comment-action" class="btn-toolbar clearfix">
+
+                    <div class="btn-group">
+                        <button class="btn btn-default"  id="submit-comment" data-url="/index.php?m=Blog&c=Index&a=addComment&app={$app}&con={$mod}&row_id={$row_id}">
+                            发表评论</button>
+                    </div>
+                </div>
+
+                <input type="hidden" name="pid" id="pid" value="" />
+            </div>
+</div>
+<ul class="list-group commentlist">
+    <li class="list-group-item respond-title">
+        <if condition="$row_id==1">{$total_count}条回应给“ 阿飞 ”的评论
+            <else />{$total_count}条回应给“{$info.title}”的评论
+        </if></li>
+    <ul id="thread-comments">
+        <if condition="!$list">
+
+            <else />
+            <volist name="list" id="comment">
+                <li class="comment byuser depth-1 list-group-item top parent">
+
+
+                    <eq name="comment.uid" value="0">
+                        <a id="comment-author" href="javascript:void(0)">
+                            <img src="{:getRootUrl()}Addons/Avatar/default_64_64.jpg" class="avatar" width="50" height="50" style="display: block;">
+                        </a>
+                        <else/>
+                        <a id="comment-author" href="{$comment.user.space_url}">
+                            <img src="{$comment.user.avatar64}" class="avatar" width="50" height="50" style="display: block;">
+                        </a>
+                    </eq>
+
+                    <div id="comment-body">
+                        <cite class="fn">
+                            <eq name="comment.uid" value="0">
+                                <a>{$comment.uname}</a>
+                                <else/>
+                                <a href="{$comment.user.space_url}">{$comment.user.nickname|op_t}</a>
+                            </eq>
+                        </cite>
+                        <div id="comment-content"><p>{$comment.content|op_h}
+                            <if condition="$comment['pid'] gt 0">
+                                <span class="commentpre">{$comment.id|getpcomment}</span>
+                            </if></p></div>
+                        <div id="comment-meta">
+                            <time datetime="{$comment.create_time|toDate}" title="{$comment.create_time|toDate}">{$comment.create_time|toDate}</time>
+                        </div>
+                    </div>
+                </li>
+
+            </volist>
+        </if>
+        <div class="pull-right">
+            {:getPagination($total_count, $count)}
+        </div>
+    </ul>
+
+</ul>
+<script>
+    $(function () {
+        $('.pagination li a').each(function(){
+            var href=$(this).attr('href');
+            $(this).attr('href',href+'#comments');
+        });
+        $('.local-comment-reply').click(function(e){
+            var $textarea = $('#commentcontent');
+            var nickname = $(this).attr('data-username');
+            var uid = $(this).attr('data-uid');
+            $textarea.focus();
+            $textarea.append('回复 @' + nickname + ' ：');
+            $('#pid').val($(this).attr('data-id'));
+        });
+        $('#submit-comment').click(function (e) {
+            e.preventDefault();
+            var url = $(this).attr('data-url');
+            var pid=$('#pid').val();
+            // tinyMCE.triggerSave();
+            var content = $('#commentcontent').val();
+            var $this = $(this);
+            $this.attr('disabled','true');
+            $.post(url, {content: content,pid:pid}, function (a) {
+                if(a.status){
+                    layer.statusinfo(a.info,'success',function(){location.reload();});
+                }else{
+                    $this.removeAttr('disabled');
+                    layer.statusinfo(a.info,'error');
+                }
+            },'json');
+        });
+    });
+</script>
+

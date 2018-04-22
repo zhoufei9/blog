@@ -1,0 +1,116 @@
+/*
+
+[目录表] 
+
+	1- indexBottom     首页底部
+	2- footSub         通用底部图片
+	3- footNav         通用底部版权等信息
+	4- go_top          返回顶部样式
+	
+*/
+
+/* =1 indexBottom––––––––––––––––––––––––––––––––-––––––*/
+#indexBottom{
+	background:url(../images/indexBottom-bg.jpg) repeat-x;
+  height:240px;
+	width:100%;
+}
+#indexBottom h2{
+	color:#FFFFFF;
+	font-size:26px;
+	font-weight:normal;
+	padding-top:60px;
+	text-align:center;
+}
+#indexBottom h2 a{
+	color:#FFFFFF;
+  font-size:26px;
+	font-weight:normal;
+	text-decoration:none;
+}
+#indexBottom h2 a:hover{
+	color:#FFCC66;
+	text-decoration:underline;
+}
+#indexBottom h3{
+	color:#FFFFFF;
+	font-size:12px;
+	font-weight:normal;
+	padding-top:40px;
+	text-align:center;
+}
+#indexBottom h3 a{
+	color:#FFFFFF;
+  font-size:12px;
+	font-weight:normal;
+	text-decoration:none;
+}
+#indexBottom h3 a:hover{
+	color:#FFCC66;
+	text-decoration:underline;
+}
+
+/* =2 footSub––––––––––––––––––––––––––––––––––––––*/
+#footSub{
+	background:url(../images/foot_img.gif) no-repeat;
+  height: 235px;
+  margin:auto;
+	margin-top:20px;
+	width:970px;
+}
+
+/* =3 footNav––––––––––––––––––––––––––––––––––––––*/
+#footNav{
+	background:#353535;
+  height:40px;
+	width:100%;
+}
+#footNav h1{
+	color:#FFFFFF;
+	font-size:12px;
+	font-weight:normal;
+	padding-top:13px;
+	text-align:center;
+}
+#footNav h1 a{
+	color:#FFFFFF;
+  font-size:12px;
+	font-weight:normal;
+	text-decoration:none;
+}
+#footNav h1 a:hover{
+	color:#FFCC66;
+	text-decoration:underline;
+}
+
+/* =4 go_top–––––––––––––––––––––––––––––––––-––––––*/
+#go_top{ 
+	bottom:15px; 
+	left:50%; 
+	margin-left:488px;
+	position:fixed;
+}
+#go_top a{
+	background:#FFF;
+	display:block; 
+	padding-top:2px;
+	text-decoration:none;
+	width:12px; 
+}
+#go_top a:hover{
+	background:#777; 
+	color:#fff;
+	text-decoration:none;
+}
+#go_top em{
+	border-width:0 6px 6px; 
+	border-style:solid; 
+	border-color: #777 #fff; 
+	display:block; 
+	height:0; 
+	overflow:hidden;
+	width:0; 
+}
+*html #go_top{
+	display:none;
+}

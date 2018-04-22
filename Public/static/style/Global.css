@@ -1,0 +1,61 @@
+
+/* =2 全局变量 Global––––––––––––––––––––––––––––––––-––––––*/
+
+body {
+	line-height: 1;
+	font: normal 12px Verdana,微软雅黑,黑体,Helvetica, sans-serif;
+	background: #fff;
+	color: #333;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix{
+	clear:both;
+	display: block;
+  overflow:hidden;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+
+html{
+	scrollbar-face-color:#c8c8c8;
+	scrollbar-highlight-color:#c8c8c8;
+	scrollbar-shadow-color:#fff;
+	scrollbar-3dlight-color:#fff;
+	scrollbar-arrow-color:#fff;
+	scrollbar-track-color:#EAEAEA;
+	scrollbar-darkshadow-color:#c8c8c8;
+}
+
+
+
+#container{
+  height:100%;
+  width:960px;
+  margin:0 auto;
+}
+
+a:link, a:visited {
+	color: #333;
+}
+a:hover {
+	color: #111;
+}
+a:active {
+	color: #111;
+}

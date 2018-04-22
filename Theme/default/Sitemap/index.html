@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="{$webdescription}<if condition="$webdescription neq ''">|</if>{:C('WEB_SITE_DESCRIPTION')}" />
+<meta name="keywords" content="{$webkeyword}<if condition="$webkeyword neq ''">|</if>{:C('WEB_SITE_KEYWORD')}" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.51cgw.cn" />
+
+<title>网站地图_{$webtitle}<if condition="$webtitle neq ''">|</if>{:C('WEB_SITE_TITLE')}|{:C('WEB_SITE_KEYWORD')}</title>
+
+<link href="__STATIC__/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+
+<style>
+html{
+	scrollbar-face-color:#c8c8c8;
+	scrollbar-highlight-color:#c8c8c8;
+	scrollbar-shadow-color:#fff;
+	scrollbar-3dlight-color:#fff;
+	scrollbar-arrow-color:#fff;
+	scrollbar-track-color:#EAEAEA;
+	scrollbar-darkshadow-color:#c8c8c8;
+}
+.otherMsg {
+color: #555;
+float: left;
+font-size: 12px;
+line-height: 20px;
+margin-left: 20px;
+overflow: hidden;
+width: 520px;
+}
+#otherBox {
+border-bottom: 1px dashed #E5E5E5;
+clear: both;
+float: left;
+padding-bottom: 20px;
+margin-bottom: 20px;
+overflow: hidden;
+width: 620px;
+}
+.linkbox{
+width: 80px;
+height: 150px;
+float: left;
+}
+</style>
+</head>
+<body>
+<include file="./default/Base/header"/>
+<!-- /header -->
+
+<div id="container">
+	<div id="main">
+		<div id="place">
+		  <strong>你现在想：</strong>&nbsp;&nbsp; <a href="/index.php?m=Blog&c=Index">[返回博客]</a>
+	  </div>
+	  <br/><br/>
+	  <div id="otherBox">
+	  <volist name="catehtml" id="vo">
+		  <h3>[网站地图]</h3>
+		  
+		  <div class="otherMsg">
+		  <volist name="vo['child']" id="vo2">
+             <div class="linkbox">			 
+			 <h3><a href="/rizhi/">{$vo2.name}</a></h3>
+			   <ul class="f6">
+				   <volist name="vo2['child']" id="vo3">
+					 <li><a href="/shenghuo/chihuo/">{$vo3.name}</a></li>	
+				   </volist>
+			   </ul>
+			 </div>
+		  </volist>
+		  </div> 
+	  </volist>
+	  </div>	  
+	 	
+	
+</div>
+<div id="sidebar">
+	<div id="ad_1">
+  	<a href="#"><img src="__STATIC__/images/ad-1.jpg" alt="公益广告" title="广告位"/></a>
+  </div>
+  
+  <div id="sideLine"></div>
+  <br/><br/><br/><br/>
+
+</div>
+
+
+</div>
+
+<!-- //底部模板 -->
+
+
+<include file="./default/Base/footer"/>
+<!-- /footer -->
+
+	
+</body>
+</html>

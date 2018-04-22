@@ -1,0 +1,10 @@
+[ 2017-09-03T17:06:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.426025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.763044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+

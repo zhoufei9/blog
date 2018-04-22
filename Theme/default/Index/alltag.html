@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="标签,热门标签,TAG,标签" />
+<meta name="robots" content="all" />
+
+
+<title>TAG标签</title>
+
+<link href="__STATIC__/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+
+</head>
+
+<body>
+<include file="./default/Base/header"/>
+<!-- /header -->
+
+
+<div id="container">
+	
+<div id="main">
+
+<div class="panel-body">
+<h3 class="post-title">所有标签</h3>	
+<div style="min-height:300px;">
+<ul class="tagul">
+	
+<tags:list name="vo" row="50" order="id desc">	
+	<li class="label"  >
+	<a class='tag2015' href="/index.php?m=Blog&c=Index&a=tagart&id={$vo.id}" {$vo.tagcolor}>
+	{$vo.title} ({$vo.num})</a></li>
+</tags:list>	
+	
+</ul>
+</div>	 
+ <div class="dmeng-pager clearfix">
+<tags:page row="50" />
+ </div>		
+</div>
+
+	
+<style>
+.post-title {
+padding-bottom: 15px;
+border-bottom: 1px solid #ccc;
+font-size: 24px;
+}
+.tagul {
+margin-top: 10px;
+list-style: none;
+padding: 0;
+}
+.tag2015:hover, .tag2015:focus {
+background-color: #017e66;
+color: #fff;
+text-decoration: none;
+}
+.label {
+height: 30px;
+display: inline-block;
+margin-right: 10px;
+}
+.tag2015 {
+display: inline-block;
+padding: 0 8px;
+color: #017e66;
+background-color: #E7F2ED;
+height: 24px;
+line-height: 24px;
+font-weight: normal;
+font-size: 13px;
+text-align: center;
+}
+</style>
+
+</div>	 
+
+<include file="./default/Base/sidebar" />
+
+
+</div>
+
+
+<include file="./default/Base/footer"/>
+<!-- /footer -->

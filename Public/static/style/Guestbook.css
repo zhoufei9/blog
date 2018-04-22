@@ -1,0 +1,222 @@
+/*
+
+[Ä¿Â¼±í] 
+
+	1- messageBoard          ÁôÑÔ°å¿ò¼Ü
+	2- messageBoardLeft      ÁôÑÔ°å×ó±ß¿ò¼Ü
+	3- messageBoardRight     ÁôÑÔ°åÓÒ±ß¿ò¼Ü
+	4- messagePage           ÁôÑÔÄÚÈÝ·ÖÒ³
+	5- messageAction         ÁôÑÔ±íµ¥
+	6- rebox{                »Ø¸´¿ò¼Ü
+	
+*/
+
+
+/* =1 messageBoard¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C-¨C¨C¨C¨C¨C¨C*/
+#messageBoard{
+	clear:both;
+	float:left;
+	margin-top:20px;
+	overflow:hidden;
+	width:620px;
+}
+
+/* =2 messageBoardLeft¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C*/
+.messageBoardLeft{/* ×ó±ß¿ò¼Ü */
+	background:#FAFAFA;
+	border:1px solid #ccc;
+	float:left;
+	width:98px;
+}
+.messageBoardAvatar{/* Í·Ïñ */
+	height:72px;
+	margin:10px auto; 
+	width:72px;
+}
+.messageBoardLeft b{
+	display:block;
+	font-size:12px;
+	font-weight:normal; 
+	line-height:15px;
+	padding-bottom:8px;
+	text-align:center;
+	width:98px;
+}
+.messageBoardLeft b a{
+	color:#A00F16;
+	font-size:12px;
+	font-weight:normal; 
+	text-decoration:none;
+}
+.messageBoardLeft b a:hover{
+	color:#004499;
+	font-size:12px;
+	font-weight:normal; 
+	text-decoration:underline;
+}
+
+/* =3 messageBoardRight¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C*/
+.messageBoardRight{/* ÓÒ±ß¿ò¼Ü */
+	float:left;
+	width:520px;
+}
+.messageBoardRight-top{/* ÓÒ±ß¿ò¼ÜÍ·²¿ */
+	background:url(../images/messageBoardRight-top.jpg) no-repeat;
+	color:#828B95;
+	float:left;
+	font-size:12px;
+	height:34px;
+	line-height:35px;
+	padding-left:35px;
+	width:485px;
+}
+
+.messageBoardRight-center{/* ÓÒ±ß¿ò¼ÜÖÐ²¿ */
+	background:url(../images/messageBoardRight-center.jpg) repeat-y;
+	color:#222222;
+	float:left;
+	font-size:14px;
+	line-height:23px;
+	_margin-top:-1px;
+	padding-left:40px;
+	padding-right:10px;
+	width:470px;
+}
+.messageBoardRight-center a{
+	color:#A00F16;
+	font-size:14px;
+	text-decoration:none;
+}
+.messageBoardRight-center a:hover{
+	color:#004499;
+	font-size:14px;
+	text-decoration:underline;
+}
+
+.messageBoardRight-bottom{/* ÓÒ±ß¿ò¼ÜµÍ²¿ */
+	background:url(../images/messageBoardRight-bottom.jpg) no-repeat;
+	float:left;
+	height:16px;
+	width:520px;
+}
+
+
+/* =4 messagePage¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C-¨C¨C¨C¨C¨C¨C*/
+#messagePage{
+	border-bottom:1px dashed #222;
+	color:#555;
+	float:left;
+	font-size:13px;
+	height:40px;
+	line-height:35px;
+	margin:20px auto;
+	text-align:center;
+	width:620px;
+}
+#messagePage a{
+	color:#555;
+	font-size:13px;
+	text-decoration:none;
+}
+#messagePage a:hover{
+	color:#111;
+	font-size:13px;
+	text-decoration:underline;
+}
+
+/* =5 messageAction¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C*/
+#messageAction{/* ±íµ¥Íâ²¿¿ò¼Ü */
+	float:left;
+	width:618px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	background:url(../images/messageAction-bg.jpg) repeat;
+	border:1px solid #CCCCCC;
+}
+.messageMsg{/* ±íµ¥ÄÚ²¿¿ò¼Ü */
+	margin:15px auto 0px auto;
+	width:590px;
+}
+.messageMsgLeft{/* ×ó±ßÊäÈë¿ò */
+	color:#666;
+	float:left;
+	font-size:14px;
+	line-height:23px;
+	margin-right:20px;
+	width:320px;
+}
+.messageMsgLeftInput{
+	border:#CCCCCC 1px solid;
+  color:#666;
+  font-size:12pt;
+  font-size:14px;
+  height:24px;
+	line-height:23px;
+	margin:5px 0px;
+	padding-left:5px;
+	width:95%;
+  _width:91%;
+}
+.messageMsgRight{/* ÓÒ±ßÊäÈë¿ò */
+	color:#666;
+	float:left;
+	font-size:14px;
+	line-height:23px;
+	width:250px;
+}
+.messageMsgRightInput{
+	border:#CCCCCC 1px solid;
+  color:#666;
+  font-size:12pt;
+  font-size:14px;
+  height:24px;
+	line-height:23px;
+	margin:5px 0px;
+	padding-left:5px;
+	 width:95%;
+  _width:91%;
+}
+.messageSelectAvatar{/* Ñ¡ÔñÍ·Ïñ */
+	width:590px;
+	margin:auto;
+}
+.messageText{/* ÊäÈëÄÚÈÝ¿ò¼Ü */
+	margin:10px auto;
+	width:590px;
+}
+.messageArea{/* ÊäÈëÄÚÈÝÎÄ±¾¿ò */
+	border:#CCCCCC 1px solid;
+	background:#FFFFFF;
+	color:#666666;
+	font-size:12px;
+	height:150px;
+	padding:10px;
+	width:568px;
+}
+.messagePost{/* Ìá½»ÁôÑÔ¿ò¼Ü */
+	margin:10px auto;
+	height:32px;
+	width:202px;
+}
+
+.messagePostBtn{/* Ìá½»°´Å¥ */
+	background:#FFF;
+	border:#CCCCCC 1px solid;
+	cursor:pointer;
+	color:#444;
+	font-size:13px;
+	height:30px;
+	line-height:25px;
+	text-align:center;
+	width:200px;
+}
+
+/* =6 rebox{¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C¨C*/
+.rebox{
+   border:1px dashed #ccc;
+   background:#fff;
+   color:#333;
+   margin:12px auto;
+   padding:5px 10px;
+   width:88%;
+}

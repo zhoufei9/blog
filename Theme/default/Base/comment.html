@@ -1,0 +1,51 @@
+<a name='postform'></a>
+<div id="commentBox">
+	<!-- //评论内容区结束 -->
+<!-- Bootstrap core CSS -->
+<link href="__STATIC__/css/bootstrap.css" rel="stylesheet">
+<!--external css-->
+<link href="__STATIC__/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href="__CSS__/simplestyle.css" rel="stylesheet">
+
+
+<!-- 公共js -->
+<script src="__STATIC__/jquery-1.10.2.min.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+<!--[if lt IE 9]>
+      <script src="__STATIC__/html5.js"></script>
+      <script src="__STATIC__/respond.min.js"></script>
+<![endif]-->
+<script src="__JS__/core.js"></script>
+<script src="__STATIC__/layer/layer.js"></script>
+<script src="__STATIC__/bootstrapTags/bootstrap-tags.js"></script>
+
+
+<script>
+var _STATIC_ = "__STATIC__";
+var _APP_="__APP__";
+var _PUBLIC_="__PUBLIC__";
+$(function(){
+
+	initUI();
+	if("{$zswinerror}"){
+		
+		var url="{$jumpUrl}";
+		
+		layer.statusinfo("{$error}",'error',urllocation,url,"{$waitSecond}");
+	
+	}
+});
+
+
+</script>
+
+
+
+<div id="commentLayout">
+		<div class="panel panel-default" id="comments">
+
+{:hook('localComment', array('app'=>'Blog','con'=>'Article','id'=>$info['id'], 'uid'=>1,'template'=>1))}
+{:hook('Advs', 'up_commentbox')}
+</div>
+</div>
+</div>

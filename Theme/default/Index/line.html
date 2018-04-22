@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ECharts">
+    <meta name="author" content="kener.linfeng@gmail.com">
+    <title>ECharts</title>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:400px"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="__PUBLIC__/home/js/echarts.js"></script>
+    <script type="text/javascript">
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: '__PUBLIC__/home/js/'
+            }
+        });
+        
+        // 使用
+        require(
+            [
+                'echarts',
+                'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main')); 
+                
+                var option = {
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            //显示图表类型切换 折线图柱状型不能切换magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['1','2','3','4','5','6','7','7','7','7','7','7','7','7','7','7','7','7']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        /*{
+            name:'邮件营销',
+            type:'line',
+            stack: '总量',
+            data:[120, 132, 101, 134, 90, 230, 210]
+        },
+        {
+            name:'联盟广告',
+            type:'line',
+            stack: '总量',
+            data:[220, 182, 191, 234, 290, 330, 310]
+        },
+        {
+            name:'视频广告',
+            type:'line',
+            stack: '总量',
+            data:[150, 232, 201, 154, 190, 330, 410]
+        },
+        {
+            name:'直接访问',
+            type:'line',
+            stack: '总量',
+            data:[320, 332, 301, 334, 390, 330, 320]
+        },*/
+        {
+            name:'{$type_name}',
+            type:'line',
+            stack: '总量',
+            data:[
+			<volist name='list' id='vo'>
+			{$vo.value},
+			</volist>
+			]
+        }
+    ]
+};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+    </script>
+	<form action="" method="post">
+	<table>
+        <tr>
+            <td colspan="3" align="center">事件</td>
+        </tr>
+        <tr>
+            <td>时间</td>
+            <td>事件</td>
+            <td>金额</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="change_time" value=""></td>
+            <td><input type="text" name="info" value=""></td>
+            <td><input type="text" name="money" value=""></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"> <button type="submit" name="submit">提交</button> </td>
+        </tr>
+	</table>
+	</form>
+</body>

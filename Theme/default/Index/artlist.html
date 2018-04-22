@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="{$webdescription}<if condition="$webdescription neq ''">|</if>{:C('WEB_SITE_DESCRIPTION')}" />
+<meta name="keywords" content="{$webkeyword}<if condition="$webkeyword neq ''">|</if>{:C('WEB_SITE_KEYWORD')}" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.51cgw.cn" />
+
+<title>{:C('WEB_SITE_TITLE')}|{$cid|get_cate_nameByid}</title>
+
+
+<link href="__STATIC__/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+
+</head>
+<body>
+<include file="./default/Base/header"/>
+<!-- /header -->
+
+
+<div id="container">
+	
+<div id="main">
+	
+	<div id="place">
+		<strong>欢迎来到阿飞的个人博客，希望能给你带来欢乐！</strong> 
+	</div>
+	<br/>
+<article:list name="vo" cate="$cid" status="1" row="10" >	
+	<div id="listArticle">
+		
+		<div class="listtitle">
+		  	<h3><a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}" title="{$vo.title}">{$vo.title}</a></h3>
+		</div>
+		
+		<span class="info">
+		  <small>日期：{$vo.create_time|friendlyDate}</small>&nbsp;｜&nbsp;
+		  <small>分类：<a href="/index.php?m=Blog&c=Index&a=artlist&cid={$vo.cid}">{$vo.cid|get_cate_nameByid}</a></small>&nbsp;｜&nbsp;
+			<small>标签：</small>{$vo.linktag}&nbsp;｜&nbsp;
+			<small> {$vo.reply_count} Comments</small>
+		</span>	
+		<if condition="$vo['img']">
+		<div class="preview">
+			<a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}" title="{$vo.title}">
+<img src="{$vo.img}" alt="{$vo.title}" height="146" width="220"></a>
+		</div>	
+		</if>
+		
+		<p class="intro">
+			{$vo.description|op_t|cutstr_html=150}
+		</p>	
+		
+		<p class="readMore">
+			<a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}">阅读剩余部分...</a>
+		</p>	
+							
+	</div>
+ </article:list>
+
+
+    <div class="pages">
+          <article:page cate="$cid" status="1" row="10" />
+		</div><!-- /pages -->
+	
+	
+</div>
+
+<include file="./default/Base/sidebar" />
+<!-- /header -->
+
+</div>
+
+
+<include file="./default/Base/footer"/>
+<!-- /footer -->
+
+
+
+</body>
+</html>

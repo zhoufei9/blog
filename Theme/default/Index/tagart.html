@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="标签,热门标签,TAG,标签： {$tag}" />
+<meta name="description" content="再次起飞Z°有关“ {$tag}”标签（TAG）的相关日志展示页面" />
+<meta name="robots" content="all" />
+
+
+<title>TAG标签： {$tag}</title>
+
+<link href="__STATIC__/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+
+</head>
+
+<body>
+<include file="./default/Base/header"/>
+<!-- /header -->
+
+
+<div id="container">
+	
+<div id="main">
+	
+	<div id="place">
+		<strong>当前位置：</strong> <a href="/index.php?m=Blog&c=Index">再次起飞Z°</a> &gt; <a href="/index.php?m=Blog&c=Index&a=alltag">TAG标签</a> &gt; {$tag}
+	</div>
+	<br/>
+
+<article:list name="vo" cate="0" status="1" row="10" onetag="$tag" >	
+	<div id="listArticle">
+		
+		<div class="listtitle">
+		  	<h3><a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}" title="{$vo.title}">{$vo.title}</a></h3>
+		</div>
+		
+		<span class="info">
+		  <small>日期：{$vo.create_time|toDate} </small>&nbsp;|&nbsp;
+		  <small>分类：<a target="_blank" href="/index.php?m=Blog&c=Index&a=artlist&cid={$vo.cid}">{$vo.cid|get_cate_nameByid}</a></small>&nbsp;|&nbsp;
+			<small>标签：</small>{$vo.linktag}&nbsp;|&nbsp;
+			<small>{$vo.view}Comments</small>
+		</span>	
+		
+		<div class="preview">
+			<a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}"><img src='{$vo.img}'   height="146" width="220"/></a>
+		</div>	
+		
+		<p class="intro">
+			{$vo.description|op_t|cutstr_html=100}
+		</p>	
+		
+		<p class="readMore">
+			<a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}" title="[field:title/]">阅读剩余部分...</a>
+		</p>	
+							
+	</div>
+ </article:list>	
+
+
+    <div class="pages">
+				<ul>
+          <article:page cate="0" status="1" row="10" onetag="$tag" />
+			  </ul>
+		</div><!-- /pages -->
+
+</div>
+
+<include file="./default/Base/sidebar" />
+
+
+</div>
+
+
+<include file="./default/Base/footer"/>
+<!-- /footer -->
+
+</body>
+</html>

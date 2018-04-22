@@ -1,0 +1,366 @@
+
+/*
+
+[目录表] 
+
+	1- container       中间容器,让main和siderba内容居中
+	2- main            main容器主要放置列表页、文章页内容
+	3- listArticle     日志列表,包含日志标题、日期、图片、摘要等
+	4- pages           列表页日志分页
+	5- place           当前位置
+	6- articleBox      日志内容,包含日志标题、日期、内容、顶踩等
+	7- otherBox     	 文章页其他框架(日志分享、日志信息、相关日志)
+	8- relateArticle   文章页相关日志
+	9- aboutmeContent  关于我的信息
+	
+*/
+
+
+/* =1 container––––––––––––––––––––––––––––––––-––––––*/
+#container{
+  height:100%;
+  margin:0 auto;
+  width:960px;
+}
+
+/* =2 main––––––––––––––––––––––––––––––––––––––*/
+#main{
+	float:left;
+	margin-top:30px;
+	width:630px;
+}
+
+/* =3 listArticle––––––––––––––––––––––––––––––––––––––*/
+#listArticle{/* 列表页日志列表框架 */
+	clear:both;
+	border-bottom:1px dashed #E5E5E5;
+	float:left;
+	margin-bottom:40px;
+	overflow:hidden;
+	width:620px;
+}
+
+.listTitle{/* 列表页日志标题 */
+	overflow:hidden;
+	width:620px;
+}
+
+.listtitle h3 a{
+	color:#222;
+	font-size:15px;
+	font-weight:bold;
+	font-family:微软雅黑;
+	text-decoration: none;
+}
+.listtitle h3 a:hover{
+	color:#662625;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+span.info{/* 列表页日志日期、标签、作者等信息 */
+	display:block;
+	margin:15px 0px;
+	text-align:left;
+	width:620px;
+}
+span.info small{
+	color:#662625;
+	font-size:11px;
+}
+span.info a{
+	color:#006600;
+	text-decoration:none;
+}
+span.info a:hover{
+  color:#662625;
+  text-decoration:underline;
+}
+
+.preview{/* 日志图片 */
+	float:left;
+	overflow:hidden;
+	width:620px;
+}
+.preview img{
+	display:block;
+	margin:0px 0px 10px 0px;
+	width:620px;
+}
+.preview a:hover img{
+}
+
+p.intro{/* 日志摘要 */
+	color:#222222;
+	font-size:14px;
+	font-family:微软雅黑;
+	line-height:20px;
+	margin-top:10px;
+	overflow:hidden;
+	width:620px;
+}
+
+
+p.readMore{/* 阅读更多 */
+	color:#222222;
+	font-size:14px;
+	font-family:微软雅黑;
+	line-height:20px;
+	margin-top:25px;
+	margin-bottom:30px;
+	overflow:hidden;
+	width:620px;
+}
+p.readMore a:hover{/* 阅读更多 */
+	color:#662625;
+}
+
+/* =4 pages–––––––––––––––––––––––––––––––––-––––––*/
+.pages{
+  float:left;
+  height:23px;
+  margin-top:5px;
+  margin-bottom:5px;
+  _margin-top:5px;
+  _margin-bottom:5px;
+  width:620px;
+}
+.pages ul{
+	float:left;
+	font-size:11px;
+}
+.pages ul li{
+	border:1px solid #333;
+	font-size:11px;
+	float:left;
+	line-height:17px;
+	margin-right:8px;
+}
+.pages ul li a{
+	color:#222;
+	display:block;
+	font-size:11px;
+	float:left;
+	padding:2px 6px;
+	text-align:center;
+	text-decoration:none;
+}
+.pages ul li a:hover{
+	color:#000;
+	font-size:11px;
+	padding:2px 6px;
+	text-decoration:underline;
+}
+.pages ul li.thisclass,.pages ul li.thisclass a,.pagebox ul li.thisclass a:hover{
+	background-color:#444;
+	color:#fff;
+	font-size:11px;
+	padding:2px 6px;
+}
+
+/* =5 place–––––––––––––––––––––––––––––––––––––*/
+#place{
+	border-bottom:1px dashed #E5E5E5;
+	color:#888;
+	font-size:11px;	
+	height:25px;	
+	overflow:hidden;
+	width:620px;
+}
+#place strong{
+	color:#888;
+	font-weight:normal;
+	font-size:11px;
+	letter-spacing:1px;
+}
+#place a{
+	color:#888;
+	font-size:11px;
+	text-decoration:none;
+}
+#place a:hover{
+	color:#000000;
+	text-decoration:underline;
+}
+
+/* =6 articleBox––––––––––––––––––––––––––––––––––––––*/
+#articleBox{/* 文章页日志框架 */
+	border:1px solid #CCCCCC;
+	background:#FAFAFA;
+	clear:both;
+	float:left;
+	margin-top:20px;
+	margin-bottom:20px;
+	overflow:hidden;
+	width:618px;
+}
+
+.articleTitle{/* 文章页日志标题 */
+	overflow:hidden;
+	width:620px;
+}
+.articleTitle h1{
+	color:#990000;
+	font-size:21px;
+	font-weight:normal;
+	font-family:微软雅黑;
+	letter-spacing:1px;
+	padding-top:20px;
+	text-decoration: none;
+	text-align:center;
+}
+
+span.articleInfo{/* 文章页日志日期、标签、作者等信息 */
+	color:#555;
+	display:block;
+	margin:15px 0px;
+	text-align:center;
+	width:620px;
+}
+span.articleInfo small{
+	color:#555;
+	font-size:11px;
+}
+
+.content{/* 文章页日志内容 */
+	color:#111;
+	float:left;
+	font-size:14px;
+	font-family:微软雅黑;
+	line-height:25px;
+	padding:10px 20px;
+	overflow:hidden;
+	width:580px;
+}
+.content p{
+	text-indent:2em;
+}
+.content a{
+	color:#111;
+	font-size:14px;
+	line-height:20px;
+	text-decoration:none;
+}
+.content a:hover{
+	color:#662625;
+	font-size:14px;
+	line-height:23px;
+	text-decoration:underline;
+}
+
+
+.digg{/* 文章页顶踩 */
+	float:left;
+	height:40px;
+	margin-top:50px;
+	width:620px;
+}
+.diggGood{
+	color:#888;
+	cursor:pointer;
+	float:right;
+	font-size:12px;
+}
+.diggBad{
+	color:#888;
+	cursor:pointer;
+	float:right;
+	font-size:12px;
+	padding-left:5px;
+	padding-right:20px;
+}
+
+
+/* =7 otherBox––––––––––––––––––––––––––––––––-–––––*/
+#otherBox{/* 文章页其他框架 */
+	border-bottom:1px dashed #E5E5E5;
+	clear:both;
+	float:left;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	overflow:hidden;
+	width:620px;
+}
+#otherBox h3{/* 框架标题 */
+	color:#662625;
+	display:block;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	height:20px;;
+	width:80px;
+}
+
+.otherMsg{/* 框架内容 */
+	color:#555;
+	float:left;
+	font-size:12px;
+	line-height:20px;
+	margin-left:20px;
+	overflow:hidden;
+	width:520px;
+}
+.otherMsg a{
+	color:#555;
+	font-size:12px;
+	text-decoration:none;
+}
+.otherMsg a:hover{
+	color:#662625;
+	font-size:12px;
+	text-decoration:underline;
+}
+.otherMsg b{
+	color:#111;
+	font-size:12px;
+	font-weight:normal;
+}
+
+
+
+/* =8 relateArticle––––––––––––––––––––––––––––––––-–––––*/
+.relateArticle{/* 相关日志列表 */
+	clear:both;
+	overflow:hidden;
+	width:100%;
+}
+.relateArticle li{
+	float:left;
+	height:27px;
+	line-height:28px;
+	list-style:none;
+	margin-left:5%;
+	_margin-left:2.5%;
+	overflow:hidden;
+	width:90%;
+}
+.relateArticle li a{
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+}
+.relateArticle li a:hover{
+	color:#662625;
+	font-size:12px;
+	text-decoration:underline;
+}
+.ico2 li{
+	background:url(../images/sidebarli.gif) 9px 9px no-repeat;
+	margin-left:8px;
+	_margin-left:4px;
+	padding:0px 30px;
+}
+
+/* =9 aboutmeContent––––––––––––––––––––––––––––––––-––––––*/
+.aboutmeContent{/* 关于我的信息 */
+	color:#222;
+	float:left;
+	font-size:14px;
+	font-family:微软雅黑;
+	line-height:23px;
+	margin:0px 0px;
+	padding:20px 25px;
+	overflow:hidden;
+	width:570px;
+}

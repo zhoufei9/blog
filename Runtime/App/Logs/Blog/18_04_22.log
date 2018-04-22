@@ -1,0 +1,1745 @@
+[ 2018-04-22T11:45:48+08:00 ] 192.168.33.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.069541s ]
+INFO: [ app_init ] --END-- [ RunTime:0.077746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024936s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0358s ]
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined offset: 1 /var/www/cgw/App/Blog/Model/MemberModel.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `cgw_user_token` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cgw_user_token` WHERE `uid` = null LIMIT 1   [ RunTime:0.0024s ]
+NOTIC: [8] Undefined offset: 2 /var/www/cgw/App/Blog/Model/MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined offset: 1 /var/www/cgw/App/Blog/Model/MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined index: zs_home /var/www/cgw/App/Blog/Controller/BlogController.class.php 第 21 行.
+NOTIC: [8] Undefined index: zs_home /var/www/cgw/App/Blog/Controller/BlogController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0010s ]
+SQL: SELECT `score` FROM `cgw_member` WHERE `uid` = null LIMIT 1   [ RunTime:0.0193s ]
+NOTIC: [8] Undefined index: zs_home /var/www/cgw/App/Blog/Controller/BlogController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `cgw_message` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_message` WHERE `status` = 1 AND `is_read` = 0 AND `to_uid` = null LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: zs_home /var/www/cgw/App/Blog/Controller/BlogController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `cgw_role_user` [ RunTime:0.0025s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: zs_home /var/www/cgw/App/Common/Common/user.php 第 486 行.
+NOTIC: [8] Undefined variable: nb /var/www/cgw/App/Common/Api/CategoryApi.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 0 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 1 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 11 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 13 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 12 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 8 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 10 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 9 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 7 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 6 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 5 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 4 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 3 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 2 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0007s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_cate` WHERE `type` = 1 AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0018s ]
+SQL: SELECT *,CONCAT(spid,id) as path2 FROM `cgw_cate` WHERE `type` = 1 AND `status` = 1 ORDER BY path2  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cgw_nav` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: active /var/www/cgw/App/Common/Common/function.php 第 141 行.
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: active /var/www/cgw/App/Common/Common/function.php 第 141 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_cate` WHERE `type` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.008345s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.008505s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000420s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined variable: webdescription /var/www/cgw/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 5 行.
+NOTIC: [8] Undefined variable: webdescription /var/www/cgw/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 5 行.
+NOTIC: [8] Undefined variable: webkeyword /var/www/cgw/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 6 行.
+NOTIC: [8] Undefined variable: webkeyword /var/www/cgw/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 6 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: lite /var/www/cgw/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+NOTIC: [8] Undefined variable: isInternalCall /var/www/cgw/App/Api/Controller/ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: array /var/www/cgw/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0148s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY tj desc,id desc LIMIT 0,10   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 76 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cgw_ucenter_member` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cgw_avatar` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SHOW COLUMNS FROM `cgw_tags` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '程序员' AND `type` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0013s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '练级攻略' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 74 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = 'Sphinx' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 73 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0005s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '分布式' AND `type` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 72 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '技巧' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 71 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '代码' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 70 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '代码' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 69 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '共享session' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0006s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '网站架构' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 67 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '面向对象' AND `type` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: format /var/www/cgw/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /var/www/cgw/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 125 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/cgw/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/cgw/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/cgw/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/cgw/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/cgw/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/cgw/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/cgw/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/cgw/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY reply_count desc LIMIT 7   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = 'SQL注入' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/cgw/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/cgw/App/Api/Controller/ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cgw_tags` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_tags` WHERE `type` IN ('1') ORDER BY num desc LIMIT 15   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cgw_picture` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: format /var/www/cgw/App/Api/Controller/ApiController.class.php 第 62 行.
+INFO: [ friendLink ] --START--
+SQL: SHOW COLUMNS FROM `cgw_super_links` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cgw_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cgw_picture` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/cgw/Addons/SuperLinks/SuperLinksAddon.class.php 第 96 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.844595s ]
+NOTIC: [8] Undefined variable: po /var/www/cgw/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/cgw/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/cgw/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/cgw/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025536s ]
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.069534s ]
+INFO: [ friendLink ] --END-- [ RunTime:0.069573s ]
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001005s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009652s ]
+
+[ 2018-04-22T11:45:58+08:00 ] 192.168.33.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.025053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0011s ]
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined offset: 1 /var/www/cgw/App/Blog/Model/MemberModel.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `cgw_user_token` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_user_token` WHERE `uid` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 2 /var/www/cgw/App/Blog/Model/MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined offset: 1 /var/www/cgw/App/Blog/Model/MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined index: zs_home /var/www/cgw/App/Blog/Controller/BlogController.class.php 第 21 行.
+NOTIC: [8] Undefined index: zs_home /var/www/cgw/App/Blog/Controller/BlogController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0014s ]
+SQL: SELECT `score` FROM `cgw_member` WHERE `uid` = null LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: zs_home /var/www/cgw/App/Blog/Controller/BlogController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `cgw_message` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_message` WHERE `status` = 1 AND `is_read` = 0 AND `to_uid` = null LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: zs_home /var/www/cgw/App/Blog/Controller/BlogController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `cgw_role_user` [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: zs_home /var/www/cgw/App/Common/Common/user.php 第 486 行.
+NOTIC: [8] Undefined variable: nb /var/www/cgw/App/Common/Api/CategoryApi.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 0 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 1 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 11 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 13 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 12 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 8 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 10 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 9 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 7 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 6 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 5 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 4 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 3 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 2 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_cate` WHERE `type` = 1 AND `enable` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0009s ]
+SQL: SELECT *,CONCAT(spid,id) as path2 FROM `cgw_cate` WHERE `type` = 1 AND `status` = 1 ORDER BY path2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_nav` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: active /var/www/cgw/App/Common/Common/function.php 第 141 行.
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: active /var/www/cgw/App/Common/Common/function.php 第 141 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_cate` WHERE `type` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.009978s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.010100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: webdescription /var/www/cgw/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 5 行.
+NOTIC: [8] Undefined variable: webdescription /var/www/cgw/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 5 行.
+NOTIC: [8] Undefined variable: webkeyword /var/www/cgw/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 6 行.
+NOTIC: [8] Undefined variable: webkeyword /var/www/cgw/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 6 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: lite /var/www/cgw/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+NOTIC: [8] Undefined variable: isInternalCall /var/www/cgw/App/Api/Controller/ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: array /var/www/cgw/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY tj desc,id desc LIMIT 0,10   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 76 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cgw_ucenter_member` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0004s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cgw_avatar` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SHOW COLUMNS FROM `cgw_tags` [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '程序员' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '练级攻略' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 74 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0004s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = 'Sphinx' AND `type` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 73 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '分布式' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 72 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '技巧' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 71 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '代码' AND `type` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 70 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '代码' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 69 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '共享session' AND `type` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '网站架构' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 67 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '面向对象' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: format /var/www/cgw/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: keyword /var/www/cgw/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 125 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/cgw/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/cgw/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0004s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0009s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/cgw/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/cgw/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/cgw/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/cgw/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/cgw/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/cgw/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY reply_count desc LIMIT 7   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = 'SQL注入' AND `type` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/cgw/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/cgw/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/cgw/App/Api/Controller/ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cgw_tags` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_tags` WHERE `type` IN ('1') ORDER BY num desc LIMIT 15   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cgw_picture` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: format /var/www/cgw/App/Api/Controller/ApiController.class.php 第 62 行.
+INFO: [ friendLink ] --START--
+SQL: SHOW COLUMNS FROM `cgw_super_links` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_picture` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/cgw/Addons/SuperLinks/SuperLinksAddon.class.php 第 96 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.478624s ]
+NOTIC: [8] Undefined variable: po /var/www/cgw/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/cgw/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/cgw/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/cgw/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004289s ]
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.045208s ]
+INFO: [ friendLink ] --END-- [ RunTime:0.045290s ]
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.000415s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.000456s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004805s ]
+
+[ 2018-04-22T11:49:36+08:00 ] 192.168.33.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.035439s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006849s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1 /var/www/blog/App/Blog/Model/MemberModel.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `cgw_user_token` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_user_token` WHERE `uid` = null LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 2 /var/www/blog/App/Blog/Model/MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined offset: 1 /var/www/blog/App/Blog/Model/MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 21 行.
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0010s ]
+SQL: SELECT `score` FROM `cgw_member` WHERE `uid` = null LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `cgw_message` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_message` WHERE `status` = 1 AND `is_read` = 0 AND `to_uid` = null LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `cgw_role_user` [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Common/Common/user.php 第 486 行.
+NOTIC: [8] Undefined variable: nb /var/www/blog/App/Common/Api/CategoryApi.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 0 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 1 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 11 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 13 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 12 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 8 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 10 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 9 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 7 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 6 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 5 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 4 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 3 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 2 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_cate` WHERE `type` = 1 AND `enable` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0009s ]
+SQL: SELECT *,CONCAT(spid,id) as path2 FROM `cgw_cate` WHERE `type` = 1 AND `status` = 1 ORDER BY path2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cgw_nav` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: active /var/www/blog/App/Common/Common/function.php 第 141 行.
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: active /var/www/blog/App/Common/Common/function.php 第 141 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_cate` WHERE `type` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.010117s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.010223s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: webdescription /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 5 行.
+NOTIC: [8] Undefined variable: webdescription /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 5 行.
+NOTIC: [8] Undefined variable: webkeyword /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 6 行.
+NOTIC: [8] Undefined variable: webkeyword /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 6 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: lite /var/www/blog/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY tj desc,id desc LIMIT 0,10   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 76 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_ucenter_member` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0006s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_avatar` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SHOW COLUMNS FROM `cgw_tags` [ RunTime:0.0011s ]
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '程序员' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '练级攻略' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 74 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = 'Sphinx' AND `type` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 73 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '分布式' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 72 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '技巧' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 71 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '代码' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 70 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '代码' AND `type` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 69 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '共享session' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '网站架构' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 67 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0007s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '面向对象' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: keyword /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 125 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY reply_count desc LIMIT 7   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0004s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = 'SQL注入' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0010s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cgw_tags` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_tags` WHERE `type` IN ('1') ORDER BY num desc LIMIT 15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cgw_picture` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+INFO: [ friendLink ] --START--
+SQL: SHOW COLUMNS FROM `cgw_super_links` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_picture` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/blog/Addons/SuperLinks/SuperLinksAddon.class.php 第 96 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.535029s ]
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007148s ]
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.055086s ]
+INFO: [ friendLink ] --END-- [ RunTime:0.055122s ]
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.000832s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.000846s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009683s ]
+
+[ 2018-04-22T11:49:39+08:00 ] 192.168.33.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.043581s ]
+INFO: [ app_init ] --END-- [ RunTime:0.049461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007996s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1 /var/www/blog/App/Blog/Model/MemberModel.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `cgw_user_token` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_user_token` WHERE `uid` = null LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 2 /var/www/blog/App/Blog/Model/MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined offset: 1 /var/www/blog/App/Blog/Model/MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 21 行.
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0011s ]
+SQL: SELECT `score` FROM `cgw_member` WHERE `uid` = null LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `cgw_message` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_message` WHERE `status` = 1 AND `is_read` = 0 AND `to_uid` = null LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `cgw_role_user` [ RunTime:0.0024s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Common/Common/user.php 第 486 行.
+NOTIC: [8] Undefined variable: nb /var/www/blog/App/Common/Api/CategoryApi.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 0 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 1 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 11 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 13 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 12 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 8 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 10 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 9 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 7 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 6 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 5 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 4 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 3 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 2 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0012s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_cate` WHERE `type` = 1 AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0009s ]
+SQL: SELECT *,CONCAT(spid,id) as path2 FROM `cgw_cate` WHERE `type` = 1 AND `status` = 1 ORDER BY path2  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cgw_nav` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: active /var/www/blog/App/Common/Common/function.php 第 141 行.
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: active /var/www/blog/App/Common/Common/function.php 第 141 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_cate` WHERE `type` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.014253s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.014432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] Undefined variable: webdescription /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 5 行.
+NOTIC: [8] Undefined variable: webdescription /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 5 行.
+NOTIC: [8] Undefined variable: webkeyword /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 6 行.
+NOTIC: [8] Undefined variable: webkeyword /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 6 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: lite /var/www/blog/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY tj desc,id desc LIMIT 0,10   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 76 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cgw_ucenter_member` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0007s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cgw_avatar` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SHOW COLUMNS FROM `cgw_tags` [ RunTime:0.0012s ]
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '程序员' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '练级攻略' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 74 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = 'Sphinx' AND `type` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 73 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '分布式' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 72 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '技巧' AND `type` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 71 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '代码' AND `type` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 70 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '代码' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 69 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '共享session' AND `type` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '网站架构' AND `type` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 67 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '面向对象' AND `type` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: keyword /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 125 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0007s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0005s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0004s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY reply_count desc LIMIT 7   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = 'SQL注入' AND `type` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cgw_tags` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cgw_tags` WHERE `type` IN ('1') ORDER BY num desc LIMIT 15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cgw_picture` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+INFO: [ friendLink ] --START--
+SQL: SHOW COLUMNS FROM `cgw_super_links` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_picture` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/blog/Addons/SuperLinks/SuperLinksAddon.class.php 第 96 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.581998s ]
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007417s ]
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.064231s ]
+INFO: [ friendLink ] --END-- [ RunTime:0.064270s ]
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.000910s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.000951s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007029s ]
+
+[ 2018-04-22T11:56:00+08:00 ] 192.168.33.1 /index.php?m=Blog&c=Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.036995s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005550s ]
+SQL: SHOW COLUMNS FROM `cgw_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 1 /var/www/blog/App/Blog/Model/MemberModel.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `cgw_user_token` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_user_token` WHERE `uid` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 /var/www/blog/App/Blog/Model/MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined offset: 1 /var/www/blog/App/Blog/Model/MemberModel.class.php 第 173 行.
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 21 行.
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0005s ]
+SQL: SELECT `score` FROM `cgw_member` WHERE `uid` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `cgw_message` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_message` WHERE `status` = 1 AND `is_read` = 0 AND `to_uid` = null LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Blog/Controller/BlogController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `cgw_role_user` [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: zs_home /var/www/blog/App/Common/Common/user.php 第 486 行.
+NOTIC: [8] Undefined variable: nb /var/www/blog/App/Common/Api/CategoryApi.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 0 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 1 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 11 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 13 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 12 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 8 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 10 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 9 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 7 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 6 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 5 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 4 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 3 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `pid` = 2 AND `type` = 1 ORDER BY ordid asc,id desc  [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_cate` WHERE `type` = 1 AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_cate` WHERE `status` = 1 AND `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0009s ]
+SQL: SELECT *,CONCAT(spid,id) as path2 FROM `cgw_cate` WHERE `type` = 1 AND `status` = 1 ORDER BY path2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cgw_nav` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: active /var/www/blog/App/Common/Common/function.php 第 141 行.
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_nav` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: active /var/www/blog/App/Common/Common/function.php 第 141 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_cate` WHERE `type` = 1 AND `pid` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_begin ] --START--
+INFO: Run Common\Behavior\basictemplateBehavior [ RunTime:0.009112s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.009204s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: webdescription /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 5 行.
+NOTIC: [8] Undefined variable: webdescription /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 5 行.
+NOTIC: [8] Undefined variable: webkeyword /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 6 行.
+NOTIC: [8] Undefined variable: webkeyword /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 6 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: lite /var/www/blog/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cgw_cate` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY tj desc,id desc LIMIT 0,10   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `cgw_article` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 76 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cgw_ucenter_member` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cgw_member` [ RunTime:0.0008s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cgw_avatar` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SHOW COLUMNS FROM `cgw_tags` [ RunTime:0.0007s ]
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '程序员' AND `type` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '练级攻略' AND `type` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 74 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = 'Sphinx' AND `type` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 73 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '分布式' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 72 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '技巧' AND `type` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 71 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '代码' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 70 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '代码' AND `type` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 69 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '共享session' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0007s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '网站架构' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 67 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = '面向对象' AND `type` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `cgw_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: keyword /var/www/blog/Runtime/App/Cache/Blog/8edcbfec52ed8f780c8f51f886be2e1e.php 第 125 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0000s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0004s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY view desc LIMIT 5   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0005s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: array /var/www/blog/App/Blog/Model/CateModel.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`pid` FROM `cgw_cate` WHERE `status` = 1 ORDER BY ordid  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_article` WHERE `cid` IN ('1','2','3','4','5','6','7','8','11') AND `status` IN ('1') ORDER BY reply_count desc LIMIT 7   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0001s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0003s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT `id` FROM `cgw_tags` WHERE `title` = 'SQL注入' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0002s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+SQL: SELECT * FROM `cgw_article` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `user_id` FROM `cgw_role_user`  [ RunTime:0.0007s ]
+SQL: SELECT `nickname` FROM `cgw_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: nickname /var/www/blog/App/Common/Common/user.php 第 350 行.
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+SQL: SELECT `type`,`name`,`value` FROM `cgw_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: isInternalCall /var/www/blog/App/Api/Controller/ApiController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cgw_tags` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cgw_tags` WHERE `type` IN ('1') ORDER BY num desc LIMIT 15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cgw_picture` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: format /var/www/blog/App/Api/Controller/ApiController.class.php 第 62 行.
+INFO: [ friendLink ] --START--
+SQL: SHOW COLUMNS FROM `cgw_super_links` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cgw_picture` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cgw_picture` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/blog/Addons/SuperLinks/SuperLinksAddon.class.php 第 96 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.583745s ]
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+NOTIC: [8] Undefined variable: po /var/www/blog/Runtime/App/Cache/Blog/a9da3c76ae86b611e87c14237d043ac6.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006807s ]
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.059033s ]
+INFO: [ friendLink ] --END-- [ RunTime:0.059103s ]
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.000952s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009040s ]
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="{$webdescription}<if condition="$webdescription neq ''">|</if>{:C('WEB_SITE_DESCRIPTION')}" />
+<meta name="keywords" content="{$webkeyword}<if condition="$webkeyword neq ''">|</if>{:C('WEB_SITE_KEYWORD')}" />
+
+
+<title>{:C('WEB_SITE_TITLE')}|{$info.title}</title>
+
+<link href="__STATIC__/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+
+<body>
+<include file="./default/Base/header"/>
+<!-- /header -->
+
+<div id="container">
+	
+<div id="main">
+	<div id="place">
+		<strong>当前位置：</strong>{$info.id|getcidinfo}
+	</div>
+
+  <div id="articleBox">
+		<div class="articleTitle">
+		  	<h1>{$info.title}</h1>
+		</div>
+		<span class="articleInfo">
+		  <small>日期：{$info.create_time|toDate}</small>&nbsp;｜&nbsp;
+		  <small>来源：网络</small>&nbsp;｜&nbsp;
+			<small>作者：{$authorinfo['nickname']}</small>&nbsp;｜&nbsp;
+			<small>{$info.view}人围观</small>&nbsp;｜&nbsp;
+			<small>{$info.ding} 人鼓掌了！</small>
+		</span>	
+		<div class="content">
+			{$info.description}
+		</div>
+	</div>
+	<div id="otherBox">
+		<h3>[日志信息]</h3>
+		<div class="otherMsg">
+			该日志于&nbsp;<b>{$info.create_time|toDate}</b>&nbsp;由<b>&nbsp;{$authorinfo['nickname']}&nbsp;</b>发表在<b>&nbsp;<a href="/">51cgw.net</a>&nbsp;</b>网站下，你除了可以发表评论外，还可以转载<b>&nbsp;“{$info.title}”&nbsp;</b>日志到你的网站或博客，但是请保留源地址及作者信息，谢谢!!&nbsp;&nbsp;&nbsp;&nbsp;<b>（尊重他人劳动，你我共同努力）</b>
+		</div>
+	</div>
+	
+	<div id="otherBox">
+		<h3>[相关日志]</h3>
+		<div class="otherMsg">
+			<ul class="relateArticle ico2">
+      <article:list name="vo" cate="0" status="1" row="3" >	
+      <li><a href="/index.php?m=Blog&c=Index&a=artc&id={$vo.id}" title="{$vo.title}">{$vo.title}</a></li>
+       </article:list>
+      </ul>
+		</div>
+	</div>
+
+	<!-- //加载评论区 -->
+  <include file="./default/Base/comment"/>
+
+</div>
+
+<include file="./default/Base/sidebar"/>
+<!-- /header -->
+
+</div>
+
+<include file="./default/Base/footer"/>
+<!-- /footer -->
+
+</body>
+</html>

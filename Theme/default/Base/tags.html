@@ -1,0 +1,6 @@
+<tags:list name="vo" row="15" order="num desc" limit="true">
+	<?php
+	if($key % 3 == 0 && $key>0) echo '</ul><ul>';
+	?>
+         <span ><a class="tag" href="/index.php?m=Blog&c=Index&a=tagart&id={$vo.id}" {$vo.tagcolor}>{$vo.title} </a></span>
+</tags:list>
